@@ -59,4 +59,49 @@ export function Hero() {
               <div style={{display:"flex",gap:16,marginTop:8}}>
                 {[{label:"Income",val:"$6,854",color:"var(--green)"},{label:"Expenses",val:"$3,579",color:"var(--red)"},{label:"Saved",val:"$3,275",color:"var(--blue)"}].map(s=>(
                   <div key={s.label}>
-                    <div style={{fontSize:8,color:"var(--text3)"}}>
+                    <div style={{fontSize:8,color:"var(--text3)"}}>{s.label}</div>
+                    <div style={{fontSize:11,fontWeight:600,color:s.color}}>{s.val}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* AI Insight card */}
+            <div style={{background:"rgba(124,107,255,0.1)",border:"1px solid rgba(124,107,255,0.3)",borderRadius:10,padding:10,marginBottom:12}}>
+              <div style={{display:"flex",alignItems:"center",gap:5,marginBottom:6}}>
+                <div style={{width:14,height:14,borderRadius:"50%",border:"1.5px solid var(--purple)",display:"flex",alignItems:"center",justifyContent:"center",fontSize:7,color:"var(--purple)"}}>⊙</div>
+                <span style={{fontSize:9,color:"var(--purple)",fontWeight:600,letterSpacing:.5}}>AI Insight</span>
+              </div>
+              <p style={{fontSize:10,color:"var(--text)",fontWeight:600,marginBottom:4}}>You're $975 away from "Emergency Fund"</p>
+              <p style={{fontSize:9,color:"var(--text2)",lineHeight:1.4}}>You can safely add $50 from your available balance.</p>
+              <div style={{marginTop:8,background:"linear-gradient(90deg,var(--purple),var(--blue))",borderRadius:6,padding:"6px 0",textAlign:"center",fontSize:9,fontWeight:600,color:"#fff"}}>Add $50 now</div>
+            </div>
+
+            {/* Transactions */}
+            {[
+              {icon:"✈️",name:"United Airlines",cat:"Travel",amount:"-$500",neg:true},
+              {icon:"🚗",name:"Uber",cat:"Transport",amount:"-$6.33",neg:true},
+              {icon:"💰",name:"Payroll",cat:"Income",amount:"+$5,850",neg:false},
+            ].map((tx)=>(
+              <div key={tx.name} style={{display:"flex",alignItems:"center",gap:8,padding:"7px 0",borderBottom:"1px solid rgba(255,255,255,0.05)"}}>
+                <div style={{width:26,height:26,background:"var(--surface2)",borderRadius:8,display:"flex",alignItems:"center",justifyContent:"center",fontSize:11}}>{tx.icon}</div>
+                <div style={{flex:1}}>
+                  <div style={{fontSize:10,color:"var(--text)",fontWeight:500}}>{tx.name}</div>
+                  <div style={{fontSize:8,color:"var(--text3)"}}>{tx.cat}</div>
+                </div>
+                <div style={{fontSize:10,fontWeight:600,color:tx.neg?"var(--red)":"var(--green)"}}>{tx.amount}</div>
+              </div>
+            ))}
+          </div>
+
+          {/* Floating card */}
+          <div style={{position:"absolute",right:-20,top:"35%",background:"var(--surface)",border:"1px solid var(--border2)",borderRadius:12,padding:"12px 14px",minWidth:140,boxShadow:"0 20px 60px rgba(0,0,0,.5)"}}>
+            <div style={{fontSize:9,color:"var(--text3)",marginBottom:3}}>Saved this month</div>
+            <div style={{fontSize:18,fontWeight:700,color:"var(--green)",letterSpacing:-1}}>+$340</div>
+            <div style={{fontSize:9,color:"var(--green)",marginTop:2}}>↑ 18% vs last month</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
