@@ -1,3 +1,5 @@
+"use client";
+
 const aiFeatures = [
   { icon: "🔍", title: "Anomaly detection", desc: "Catches unusual spending before it becomes a pattern. Flags subscriptions you forgot about." },
   { icon: "📈", title: "Trend analysis", desc: "Compares this month to last month, last quarter, last year. Shows you the direction you're heading." },
