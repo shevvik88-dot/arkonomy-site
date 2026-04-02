@@ -1,3 +1,5 @@
+"use client";
+
 export function Nav() {
   return (
     <nav style={{
