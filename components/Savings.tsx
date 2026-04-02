@@ -1,3 +1,5 @@
+"use client";
+
 const roundups = [
   { icon: "☕", name: "Blue Bottle", spent: "$3.60 spent", saved: "+$0.40" },
   { icon: "🛒", name: "Trader Joe's", spent: "$47.30 spent", saved: "+$0.70" },
