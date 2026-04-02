@@ -1,3 +1,5 @@
+"use client";
+
 const features = [
   { icon: "📊", title: "Automatic tracking", color: "var(--green-glow)", desc: "Connect your accounts once. Every transaction is categorized and tracked in real time — no manual entry ever." },
   { icon: "✦", title: "AI that actually thinks", color: "var(--blue-glow)", desc: "Not generic advice. Real analysis of your patterns, anomalies, and habits. Insights that are specific to you." },
