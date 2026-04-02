@@ -1,3 +1,5 @@
+"use client";
+
 const transactions = [
   { icon: "☕", name: "Blue Bottle Coffee", date: "Today · Food & Drink", amount: "-$8.50", neg: true },
   { icon: "🏥", name: "CVS Pharmacy", date: "Yesterday · Health", amount: "-$34.20", neg: true },
