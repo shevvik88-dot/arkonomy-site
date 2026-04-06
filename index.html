@@ -384,6 +384,90 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
 .footer-links a{font-size:13px;color:var(--text3);transition:color .2s;}
 .footer-links a:hover{color:var(--text2);}
 
+/* ═══ SOCIAL PROOF ═══════════════════════════════════════════════ */
+.social-bar{padding:22px 7%;background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.social-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;}
+.social-text{font-size:14px;color:var(--text2);font-weight:300;max-width:280px;}
+.avatars-group{display:flex;align-items:center;gap:12px;}
+.avatars{display:flex;}
+.av{width:36px;height:36px;border-radius:50%;border:2.5px solid var(--bg2);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#fff;margin-left:-10px;flex-shrink:0;}
+.av:first-child{margin-left:0;}
+.stars-wrap{display:flex;align-items:center;gap:6px;}
+.stars{color:#fbbf24;font-size:14px;letter-spacing:1px;}
+.rating-text{font-size:12px;color:var(--text2);}
+.stat-pills{display:flex;gap:8px;flex-wrap:wrap;}
+.stat-pill{font-size:11px;font-weight:600;color:var(--text2);background:var(--surface);border:1px solid var(--border2);border-radius:50px;padding:5px 12px;white-space:nowrap;}
+
+/* ═══ SECURITY ════════════════════════════════════════════════════ */
+.sec-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:52px;}
+.sec-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:28px 24px;}
+.sec-ico{width:48px;height:48px;border-radius:13px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;}
+.sec-card h3{font-size:17px;font-weight:600;margin-bottom:10px;letter-spacing:-.2px;}
+.sec-card p{font-size:14px;color:var(--text2);line-height:1.7;font-weight:300;}
+.trust-bar{display:flex;align-items:center;justify-content:center;gap:0;margin-top:44px;background:var(--surface);border:1px solid var(--border);border-radius:14px;overflow:hidden;flex-wrap:wrap;}
+.trust-item{display:flex;align-items:center;gap:9px;padding:16px 32px;font-size:13px;color:var(--text2);font-weight:500;border-right:1px solid var(--border);}
+.trust-item:last-child{border-right:none;}
+
+/* ═══ BEFORE / AFTER ══════════════════════════════════════════════ */
+.ba-table{margin-top:52px;border-radius:16px;overflow:hidden;border:1px solid var(--border);}
+.ba-header{display:grid;grid-template-columns:1fr 1fr;}
+.ba-hd-l{padding:15px 24px;background:rgba(255,107,107,.07);border-bottom:1px solid rgba(255,107,107,.18);border-right:1px solid var(--border);font-size:14px;font-weight:700;color:var(--red);}
+.ba-hd-r{padding:15px 24px;background:rgba(0,229,160,.07);border-bottom:1px solid rgba(0,229,160,.18);font-size:14px;font-weight:700;color:var(--green);}
+.ba-row{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--border);}
+.ba-row:last-child{border-bottom:none;}
+.ba-row:nth-child(odd) .ba-l,.ba-row:nth-child(odd) .ba-r{background:var(--surface);}
+.ba-row:nth-child(even) .ba-l,.ba-row:nth-child(even) .ba-r{background:var(--bg);}
+.ba-l{padding:13px 24px;border-right:1px solid var(--border);font-size:14px;color:var(--red);display:flex;align-items:center;gap:10px;font-weight:400;}
+.ba-r{padding:13px 24px;font-size:14px;color:var(--green);display:flex;align-items:center;gap:10px;font-weight:400;}
+
+/* ═══ PRICING ═════════════════════════════════════════════════════ */
+.pricing-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:820px;margin:52px auto 0;}
+.price-card{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:36px 32px;position:relative;}
+.price-card-pro{border-color:rgba(0,229,160,.38);box-shadow:0 0 40px rgba(0,229,160,.06);}
+.price-popular{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--green);color:#0d1117;font-size:11px;font-weight:700;padding:4px 16px;border-radius:50px;white-space:nowrap;}
+.price-amount{font-size:40px;font-weight:700;letter-spacing:-2px;line-height:1.05;margin-bottom:4px;}
+.price-period{font-size:13px;color:var(--text3);}
+.price-desc{font-size:14px;color:var(--text2);margin:12px 0 22px;font-weight:300;line-height:1.55;}
+.price-divider{height:1px;background:var(--border);margin-bottom:20px;}
+.pf-list{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:28px;}
+.pf-list li{display:flex;align-items:center;gap:9px;font-size:14px;color:var(--text2);}
+.pf-list li .chk{color:var(--green);font-weight:700;flex-shrink:0;font-size:15px;}
+.price-note{text-align:center;font-size:12px;color:var(--text3);margin-top:14px;}
+.btn-outline-price{display:block;width:100%;text-align:center;padding:13px;border-radius:50px;border:1px solid var(--border3);font-size:15px;font-weight:600;color:var(--text);transition:border-color .2s;}
+.btn-outline-price:hover{border-color:var(--text2);}
+.btn-green-price{display:block;width:100%;text-align:center;padding:13px;border-radius:50px;background:var(--green);font-size:15px;font-weight:700;color:#0d1117;transition:opacity .2s;}
+.btn-green-price:hover{opacity:.85;}
+
+/* ═══ FAQ ═════════════════════════════════════════════════════════ */
+.faq-list{max-width:760px;margin:52px auto 0;}
+.faq-item{border-bottom:1px solid var(--border);}
+.faq-item:first-child{border-top:1px solid var(--border);}
+.faq-q{display:flex;align-items:center;justify-content:space-between;padding:18px 0;cursor:pointer;user-select:none;gap:16px;}
+.faq-q-text{font-size:15px;font-weight:600;color:var(--text);transition:color .2s;}
+.faq-icon{width:22px;height:22px;border-radius:50%;background:var(--surface2);border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--text2);flex-shrink:0;transition:transform .25s,background .2s,border-color .2s,color .2s;line-height:1;}
+.faq-item.open .faq-icon{transform:rotate(45deg);background:rgba(124,107,255,.15);border-color:rgba(124,107,255,.3);color:var(--purple);}
+.faq-item.open .faq-q-text{color:var(--green);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .32s ease,padding .28s ease;font-size:14px;color:var(--text2);line-height:1.7;font-weight:300;padding-left:0;border-left:3px solid transparent;transition:max-height .32s ease,padding .28s ease,border-color .2s;}
+.faq-item.open .faq-a{max-height:180px;padding:0 0 18px 16px;border-left-color:var(--purple);}
+
+/* ═══ STICKY BAR ══════════════════════════════════════════════════ */
+.sticky-bar{
+  position:fixed;bottom:0;left:0;right:0;z-index:300;
+  background:var(--surface);border-top:1px solid var(--border);
+  padding:14px 7%;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  transform:translateY(100%);
+  transition:transform .35s cubic-bezier(.4,0,.2,1);
+  box-shadow:0 -8px 40px rgba(0,0,0,.5);
+}
+.sticky-bar.visible{transform:translateY(0);}
+.sticky-left{display:flex;align-items:center;gap:10px;}
+.sticky-name{font-size:14px;font-weight:700;color:var(--text);}
+.sticky-sub{font-size:12px;color:var(--text3);}
+.sticky-right{display:flex;align-items:center;gap:10px;}
+.sticky-close{background:transparent;border:none;cursor:pointer;color:var(--text3);font-size:18px;padding:6px;line-height:1;transition:color .2s;font-family:inherit;}
+.sticky-close:hover{color:var(--text);}
+
 /* ═══ RESPONSIVE ═════════════════════════════════════════════════ */
 @media(max-width:1100px){
   .feat-grid{grid-template-columns:repeat(2,1fr);}
@@ -397,6 +481,11 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
   .cta-card{padding:50px 24px;}
   nav ul{display:none;}
   section{padding:72px 6%;}
+  .sec-grid{grid-template-columns:1fr;}
+  .pricing-grid{grid-template-columns:1fr;max-width:480px;}
+  .ba-header,.ba-row{grid-template-columns:1fr 1fr;}
+  .social-inner{flex-direction:column;align-items:flex-start;}
+  .trust-item{padding:14px 20px;}
 }
 @media(max-width:720px){
   .phone-wrap,.phone-float{display:none;}
@@ -404,6 +493,13 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
   section{padding:60px 5%;}
   nav{padding:0 5%;}
   footer{padding:36px 5%;}
+  .ba-l,.ba-r{padding:11px 14px;font-size:13px;}
+  .ba-hd-l,.ba-hd-r{padding:12px 14px;}
+  .trust-bar{flex-direction:column;gap:0;}
+  .trust-item{width:100%;border-right:none;border-bottom:1px solid var(--border);}
+  .trust-item:last-child{border-bottom:none;}
+  .sticky-bar{padding:12px 5%;}
+  .sticky-sub{display:none;}
 }
 </style>
 </head>
@@ -546,6 +642,31 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
   </div>
 </section>
 
+<!-- ═══════════════════════════════ SOCIAL PROOF -->
+<div class="social-bar">
+  <div class="social-inner">
+    <div class="social-text">Trusted by early users who take their finances seriously</div>
+    <div class="avatars-group">
+      <div class="avatars">
+        <div class="av" style="background:#7c6bff;">JM</div>
+        <div class="av" style="background:#00c9a7;">SR</div>
+        <div class="av" style="background:#38b6ff;">AK</div>
+        <div class="av" style="background:#ff6b6b;">DL</div>
+        <div class="av" style="background:#fbbf24;color:#0d1117;">TP</div>
+      </div>
+      <div class="stars-wrap">
+        <span class="stars">★★★★★</span>
+        <span class="rating-text">4.9 from beta users</span>
+      </div>
+    </div>
+    <div class="stat-pills">
+      <div class="stat-pill">65+ transactions tracked</div>
+      <div class="stat-pill">AI insights daily</div>
+      <div class="stat-pill">Bank-level security</div>
+    </div>
+  </div>
+</div>
+
 <!-- ═══════════════════════════════ FEATURES -->
 <section id="features" style="background:var(--bg2);">
   <div class="inner">
@@ -581,6 +702,195 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
         </div>
         <h3>Monthly Comparisons</h3>
         <p>See exactly how this month compares to last. Spot trends before they become problems.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ SECURITY & TRUST -->
+<section id="security">
+  <div class="inner">
+    <div class="eyebrow green">Bank-level security</div>
+    <h2 class="sec-title">Your data is safe. Always.</h2>
+    <div class="sec-grid">
+
+      <div class="sec-card" style="border-color:rgba(0,229,160,.18);">
+        <div class="sec-ico" style="background:rgba(0,229,160,.1);border:1px solid rgba(0,229,160,.2);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00e5a0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Read-only access</h3>
+        <p>We never store your credentials. Plaid connects directly to your bank using the same technology trusted by Venmo and Coinbase.</p>
+      </div>
+
+      <div class="sec-card" style="border-color:rgba(56,182,255,.18);">
+        <div class="sec-ico" style="background:rgba(56,182,255,.1);border:1px solid rgba(56,182,255,.2);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#38b6ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+        </div>
+        <h3>256-bit encryption</h3>
+        <p>All data encrypted in transit and at rest using AES-256. The same encryption standard used by the world's major banks.</p>
+      </div>
+
+      <div class="sec-card" style="border-color:rgba(124,107,255,.18);">
+        <div class="sec-ico" style="background:rgba(124,107,255,.1);border:1px solid rgba(124,107,255,.2);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7c6bff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0112 20c-7 0-11-8-11-8a18.45 18.45 0 015.06-5.94M9.9 4.24A9.12 9.12 0 0112 4c7 0 11 8 11 8a18.5 18.5 0 01-2.16 3.19m-6.72-1.07a3 3 0 11-4.24-4.24M1 1l22 22"/></svg>
+        </div>
+        <h3>Zero data selling</h3>
+        <p>We never sell your financial data. Ever. Your money information stays yours — it's used only to generate your personal insights.</p>
+      </div>
+
+    </div>
+    <div class="trust-bar">
+      <div class="trust-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00e5a0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <span>Secured by Plaid</span>
+      </div>
+      <div class="trust-sep" style="width:1px;height:20px;background:var(--border);"></div>
+      <div class="trust-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#38b6ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        <span>Hosted on Vercel</span>
+      </div>
+      <div class="trust-sep" style="width:1px;height:20px;background:var(--border);"></div>
+      <div class="trust-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7c6bff" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        <span>Powered by Claude AI</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ BEFORE / AFTER -->
+<section id="compare" style="background:var(--bg2);">
+  <div class="inner">
+    <div class="eyebrow blue">Why Arkonomy</div>
+    <h2 class="sec-title">Stop guessing. Start knowing.</h2>
+    <div class="ba-table">
+      <div class="ba-header">
+        <div class="ba-hd-l">❌ Without Arkonomy</div>
+        <div class="ba-hd-r">✓ With Arkonomy</div>
+      </div>
+      <div class="ba-row">
+        <div class="ba-l"><span style="opacity:.5;flex-shrink:0;">✗</span> No idea where money went</div>
+        <div class="ba-r"><span style="flex-shrink:0;">✓</span> Every dollar tracked automatically</div>
+      </div>
+      <div class="ba-row">
+        <div class="ba-l"><span style="opacity:.5;flex-shrink:0;">✗</span> Manual spreadsheets</div>
+        <div class="ba-r"><span style="flex-shrink:0;">✓</span> AI does it for you</div>
+      </div>
+      <div class="ba-row">
+        <div class="ba-l"><span style="opacity:.5;flex-shrink:0;">✗</span> Generic budget templates</div>
+        <div class="ba-r"><span style="flex-shrink:0;">✓</span> Insights based on YOUR spending</div>
+      </div>
+      <div class="ba-row">
+        <div class="ba-l"><span style="opacity:.5;flex-shrink:0;">✗</span> Realize overspending too late</div>
+        <div class="ba-r"><span style="flex-shrink:0;">✓</span> Alerts before it's a problem</div>
+      </div>
+      <div class="ba-row">
+        <div class="ba-l"><span style="opacity:.5;flex-shrink:0;">✗</span> Saving feels impossible</div>
+        <div class="ba-r"><span style="flex-shrink:0;">✓</span> Round-ups build savings quietly</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ PRICING -->
+<section id="pricing">
+  <div class="inner" style="text-align:center;">
+    <div class="eyebrow green">Simple pricing</div>
+    <h2 class="sec-title">Start free. Upgrade when ready.</h2>
+    <div class="pricing-grid">
+
+      <!-- Free -->
+      <div class="price-card">
+        <div class="price-amount">$0</div>
+        <div class="price-period">/ month</div>
+        <div class="price-desc">Perfect to start</div>
+        <div class="price-divider"></div>
+        <ul class="pf-list">
+          <li><span class="chk">✓</span> Connect 1 bank account</li>
+          <li><span class="chk">✓</span> Transaction tracking</li>
+          <li><span class="chk">✓</span> Basic AI insights</li>
+          <li><span class="chk">✓</span> Monthly summary</li>
+        </ul>
+        <a href="https://app.arkonomy.com" class="btn-outline-price">Get Started Free</a>
+      </div>
+
+      <!-- Pro -->
+      <div class="price-card price-card-pro">
+        <div class="price-popular">Most Popular</div>
+        <div class="price-amount" style="color:var(--green);">$9.99</div>
+        <div class="price-period">/ month</div>
+        <div class="price-desc">For serious financial growth</div>
+        <div class="price-divider"></div>
+        <ul class="pf-list">
+          <li><span class="chk">✓</span> Unlimited accounts</li>
+          <li><span class="chk">✓</span> Full AI insights &amp; analysis</li>
+          <li><span class="chk">✓</span> Savings goals &amp; round-ups</li>
+          <li><span class="chk">✓</span> Alpaca investing integration</li>
+          <li><span class="chk">✓</span> Spending breakdown &amp; charts</li>
+          <li><span class="chk">✓</span> Priority support</li>
+        </ul>
+        <a href="https://app.arkonomy.com" class="btn-green-price">Start Free Trial</a>
+      </div>
+
+    </div>
+    <div class="price-note">No credit card required · Cancel anytime</div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ FAQ -->
+<section id="faq" style="background:var(--bg2);">
+  <div class="inner">
+    <div class="eyebrow purple" style="text-align:center;">FAQ</div>
+    <h2 class="sec-title" style="text-align:center;">Common questions</h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">Is it safe to connect my bank account?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">Yes. We use Plaid — the same technology used by Venmo, Coinbase, and thousands of other apps. We get read-only access and never see your login credentials.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">Which banks are supported?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">Over 12,000 US financial institutions including Chase, Bank of America, Wells Fargo, Citi, and most credit unions.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">Is Arkonomy really free?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">The core features are completely free. We offer a Pro plan for advanced AI insights, investing features, and unlimited account connections.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">How is this different from Mint or YNAB?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">Arkonomy uses real AI (powered by Claude) to give you specific, actionable insights — not generic tips. It understands your actual patterns and tells you exactly what to change.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">Does it work on mobile?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">Yes. Arkonomy is a Progressive Web App — install it on your iPhone or Android from the browser. No app store needed.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">What happens to my data?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">Your financial data is encrypted, never sold, and used only to generate your personal insights. You can delete your account and all data at any time.</div>
       </div>
 
     </div>
@@ -1109,5 +1419,53 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
   </div>
 </footer>
 
+<!-- ═══════════════════════════════ STICKY CTA BAR -->
+<div class="sticky-bar" id="stickyBar">
+  <div class="sticky-left">
+    <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+      <rect width="32" height="32" rx="8" fill="#131c2e"/>
+      <polygon points="16,5 27,25 5,25" fill="none" stroke="#00e5a0" stroke-width="2" stroke-linejoin="round"/>
+      <circle cx="16" cy="24.5" r="2" fill="#00e5a0"/>
+    </svg>
+    <div>
+      <div class="sticky-name">Arkonomy</div>
+      <div class="sticky-sub">AI Financial Autopilot</div>
+    </div>
+  </div>
+  <div class="sticky-right">
+    <a href="https://app.arkonomy.com" class="btn-pill">Get Started Free</a>
+    <button class="sticky-close" id="stickyClose" aria-label="Dismiss">×</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(function(q){
+    q.addEventListener('click',function(){
+      var item=this.closest('.faq-item');
+      var isOpen=item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(o){o.classList.remove('open');});
+      if(!isOpen) item.classList.add('open');
+    });
+  });
+
+  // Sticky bar
+  var bar=document.getElementById('stickyBar');
+  var closeBtn=document.getElementById('stickyClose');
+  var dismissed=false;
+  var shown=false;
+  function checkScroll(){
+    if(dismissed) return;
+    if(window.scrollY>300 && !shown){ bar.classList.add('visible'); shown=true; }
+    else if(window.scrollY<=300 && shown){ bar.classList.remove('visible'); shown=false; }
+  }
+  window.addEventListener('scroll',checkScroll,{passive:true});
+  closeBtn.addEventListener('click',function(){
+    bar.classList.remove('visible');
+    dismissed=true;
+  });
+})();
+</script>
 </body>
 </html>
