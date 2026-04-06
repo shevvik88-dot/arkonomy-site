@@ -17,14 +17,14 @@
   --red:#ff6b6b;--amber:#fbbf24;--orange:#ff9051;--pink:#ff6b9d;
 }
 html{scroll-behavior:smooth;}
-body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.6;overflow-x:hidden;}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.7;overflow-x:hidden;}
 a{text-decoration:none;color:inherit;}
 img{display:block;}
 
 /* ─── NAV ─────────────────────────────────────────────────────────────────── */
 nav{
   position:fixed;top:0;left:0;right:0;z-index:200;
-  height:64px;padding:0 5%;
+  height:64px;padding:0 7%;
   display:flex;align-items:center;justify-content:space-between;
   background:rgba(10,14,21,0.82);backdrop-filter:blur(24px);
   border-bottom:1px solid var(--border);
@@ -45,7 +45,7 @@ nav{
 /* ─── HERO ────────────────────────────────────────────────────────────────── */
 .hero{
   min-height:100vh;display:flex;align-items:center;
-  padding:100px 5% 80px;position:relative;overflow:hidden;
+  padding:100px 7% 80px;position:relative;overflow:hidden;
 }
 .hero-bg-glow{
   position:absolute;top:-15%;left:50%;transform:translateX(-50%);
@@ -151,7 +151,7 @@ h1{font-size:clamp(36px,4vw,58px);font-weight:700;line-height:1.08;letter-spacin
 .pf-s{font-size:9px;color:var(--green);margin-top:3px;}
 
 /* ─── SECTIONS COMMON ─────────────────────────────────────────────────────── */
-section{padding:96px 5%;}
+section{padding:96px 7%;}
 .inner{max-width:1200px;margin:0 auto;}
 .s-eyebrow{font-size:12px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;margin-bottom:12px;}
 .s-title{font-size:clamp(28px,3vw,44px);font-weight:700;letter-spacing:-1.2px;line-height:1.18;margin-bottom:16px;}
@@ -161,7 +161,7 @@ section{padding:96px 5%;}
 .feat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:56px;}
 @media(max-width:1100px){.feat-grid{grid-template-columns:repeat(2,1fr);}}
 .feat-card{
-  background:var(--surface);border-radius:16px;padding:28px 24px;
+  background:var(--surface);border-radius:16px;padding:32px 28px;
   border:1px solid var(--border);
   transition:border-color .25s,transform .2s;
 }
@@ -169,10 +169,10 @@ section{padding:96px 5%;}
 .feat-icon{
   width:48px;height:48px;border-radius:13px;
   display:flex;align-items:center;justify-content:center;
-  margin-bottom:20px;font-size:22px;
+  margin-bottom:22px;font-size:22px;
 }
-.feat-card h3{font-size:16px;font-weight:600;margin-bottom:8px;letter-spacing:-.2px;}
-.feat-card p{font-size:13.5px;color:var(--text2);line-height:1.6;font-weight:300;}
+.feat-card h3{font-size:18px;font-weight:600;margin-bottom:10px;letter-spacing:-.2px;}
+.feat-card p{font-size:14px;color:var(--text2);line-height:1.7;font-weight:300;}
 
 /* ─── APP PREVIEW ─────────────────────────────────────────────────────────── */
 .preview-cols{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:60px;}
@@ -291,7 +291,7 @@ section{padding:96px 5%;}
 
 /* ─── SPENDING BREAKDOWN ──────────────────────────────────────────────────── */
 .spend-layout{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;margin-top:60px;}
-.donut-wrap{position:relative;width:220px;height:220px;margin:0 auto;}
+.donut-wrap{position:relative;width:300px;height:300px;margin:0 auto;}
 .donut-center{
   position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
   text-align:center;pointer-events:none;
@@ -362,7 +362,7 @@ section{padding:96px 5%;}
 .cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:36px;}
 
 /* ─── FOOTER ──────────────────────────────────────────────────────────────── */
-footer{padding:40px 5%;border-top:1px solid var(--border);background:var(--bg2);}
+footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);}
 .footer-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;}
 .footer-links{display:flex;gap:24px;}
 .footer-links a{font-size:13px;color:var(--text3);transition:color .2s;}
@@ -370,16 +370,21 @@ footer{padding:40px 5%;border-top:1px solid var(--border);background:var(--bg2);
 .footer-copy{font-size:13px;color:var(--text3);}
 
 /* ─── RESPONSIVE ──────────────────────────────────────────────────────────── */
+@media(max-width:1060px){
+  .hero-grid{grid-template-columns:1fr 420px;}
+  .hero-grid .phone-scene{justify-content:flex-end;}
+}
 @media(max-width:960px){
   .hero-grid,.ai-layout,.savings-layout,.spend-layout,.steps-row{grid-template-columns:1fr;}
-  .phone-scene{display:none;}
   .cta-card{padding:52px 24px;}
   .preview-cols{grid-template-columns:1fr;}
   nav ul{display:none;}
   .steps-row::before{display:none;}
   .feat-grid{grid-template-columns:repeat(2,1fr);}
+  section{padding:80px 6%;}
 }
-@media(max-width:600px){
+@media(max-width:720px){
+  .phone-scene{display:none;}
   .feat-grid{grid-template-columns:1fr;}
   section{padding:64px 5%;}
 }
@@ -401,7 +406,6 @@ footer{padding:40px 5%;border-top:1px solid var(--border);background:var(--bg2);
     <li><a href="#features">Features</a></li>
     <li><a href="#preview">App</a></li>
     <li><a href="#ai">AI</a></li>
-    <li><a href="#spending">Insights</a></li>
     <li><a href="#savings">Savings</a></li>
   </ul>
   <a href="https://app.arkonomy.com" class="btn-pill">Get Started</a>
@@ -806,26 +810,26 @@ footer{padding:40px 5%;border-top:1px solid var(--border);background:var(--bg2);
       <!-- Donut chart -->
       <div style="display:flex;flex-direction:column;align-items:center;gap:36px;">
         <div class="donut-wrap">
-          <svg width="220" height="220" viewBox="0 0 220 220">
+          <svg width="300" height="300" viewBox="0 0 300 300">
             <!-- Background circle -->
-            <circle cx="110" cy="110" r="80" fill="none" stroke="#1e2d45" stroke-width="28"/>
-            <!-- Travel 28% -->
-            <circle cx="110" cy="110" r="80" fill="none" stroke="#38b6ff" stroke-width="28"
-              stroke-dasharray="141.4 363.2" stroke-dashoffset="125.7" stroke-linecap="butt"/>
-            <!-- Food 21% -->
-            <circle cx="110" cy="110" r="80" fill="none" stroke="#ff9051" stroke-width="28"
-              stroke-dasharray="105.8 398.8" stroke-dashoffset="-15.7" stroke-linecap="butt"/>
-            <!-- Transport 17% -->
-            <circle cx="110" cy="110" r="80" fill="none" stroke="#00e5a0" stroke-width="28"
-              stroke-dasharray="85.6 419.0" stroke-dashoffset="-121.4" stroke-linecap="butt"/>
-            <!-- Entertainment 16% -->
-            <circle cx="110" cy="110" r="80" fill="none" stroke="#7c6bff" stroke-width="28"
-              stroke-dasharray="80.5 424.1" stroke-dashoffset="-206.9" stroke-linecap="butt"/>
-            <!-- Other 18% -->
-            <circle cx="110" cy="110" r="80" fill="none" stroke="#253555" stroke-width="28"
-              stroke-dasharray="90.7 414.0" stroke-dashoffset="-287.4" stroke-linecap="butt"/>
-            <!-- Gap overlay circles for visual separation -->
-            <circle cx="110" cy="110" r="94" fill="none" stroke="#0d1117" stroke-width="2" stroke-dasharray="1.2 2.2"/>
+            <circle cx="150" cy="150" r="108" fill="none" stroke="#1e2d45" stroke-width="32"/>
+            <!-- Travel 28%: len=190.0, offset=169.6 -->
+            <circle cx="150" cy="150" r="108" fill="none" stroke="#38b6ff" stroke-width="32"
+              stroke-dasharray="190.0 488.6" stroke-dashoffset="169.6" stroke-linecap="butt"/>
+            <!-- Food 21%: len=142.5, offset=-20.4 -->
+            <circle cx="150" cy="150" r="108" fill="none" stroke="#ff9051" stroke-width="32"
+              stroke-dasharray="142.5 536.1" stroke-dashoffset="-20.4" stroke-linecap="butt"/>
+            <!-- Transport 17%: len=115.4, offset=-162.9 -->
+            <circle cx="150" cy="150" r="108" fill="none" stroke="#00e5a0" stroke-width="32"
+              stroke-dasharray="115.4 563.2" stroke-dashoffset="-162.9" stroke-linecap="butt"/>
+            <!-- Entertainment 16%: len=108.6, offset=-278.3 -->
+            <circle cx="150" cy="150" r="108" fill="none" stroke="#7c6bff" stroke-width="32"
+              stroke-dasharray="108.6 569.9" stroke-dashoffset="-278.3" stroke-linecap="butt"/>
+            <!-- Other 18%: len=122.1, offset=-386.9 -->
+            <circle cx="150" cy="150" r="108" fill="none" stroke="#253555" stroke-width="32"
+              stroke-dasharray="122.1 556.5" stroke-dashoffset="-386.9" stroke-linecap="butt"/>
+            <!-- Gap lines between segments -->
+            <circle cx="150" cy="150" r="124" fill="none" stroke="#0d1117" stroke-width="2" stroke-dasharray="1.5 3.0"/>
           </svg>
           <div class="donut-center">
             <div class="donut-center-val">$3,579</div>
