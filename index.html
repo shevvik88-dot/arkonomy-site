@@ -1464,13 +1464,19 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
   var bar=document.getElementById('stickyBar');
   var closeBtn=document.getElementById('stickyClose');
   var dismissed=false;
-  var shown=false;
-  function checkScroll(){
-    if(dismissed) return;
-    if(window.scrollY>300 && !shown){ bar.classList.add('visible'); shown=true; }
-    else if(window.scrollY<=300 && shown){ bar.classList.remove('visible'); shown=false; }
+  var footerVisible=false;
+  function updateBar(){
+    if(dismissed||footerVisible){ bar.classList.remove('visible'); return; }
+    if(window.scrollY>300){ bar.classList.add('visible'); }
+    else{ bar.classList.remove('visible'); }
   }
-  window.addEventListener('scroll',checkScroll,{passive:true});
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(entries){
+      footerVisible=entries[0].isIntersecting;
+      updateBar();
+    },{threshold:0}).observe(document.querySelector('footer'));
+  }
+  window.addEventListener('scroll',updateBar,{passive:true});
   closeBtn.addEventListener('click',function(){
     bar.classList.remove('visible');
     dismissed=true;
