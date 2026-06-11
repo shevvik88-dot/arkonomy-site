@@ -590,23 +590,46 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
         </div>
 
         <!-- Balance -->
-        <div class="ph-bal-label">NET BALANCE</div>
-        <div class="ph-balance money">$3,275.26</div>
+        <div class="ph-bal-label">ACCOUNT BALANCE</div>
+        <div class="ph-balance money">$4,285.50</div>
 
         <!-- Stats row -->
         <div class="ph-stats">
           <div class="ph-stat">
             <div class="ph-stat-l"><div class="ph-stat-dot" style="background:var(--green);"></div>Income</div>
-            <div class="ph-stat-v green">$6,854</div>
+            <div class="ph-stat-v green">$6,200</div>
           </div>
           <div class="ph-stat">
             <div class="ph-stat-l"><div class="ph-stat-dot" style="background:var(--red);"></div>Expenses</div>
-            <div class="ph-stat-v red">$2,450</div>
+            <div class="ph-stat-v red">$1,914</div>
           </div>
           <div class="ph-stat">
-            <div class="ph-stat-l"><div class="ph-stat-dot" style="background:var(--blue);"></div>Saved</div>
-            <div class="ph-stat-v blue">$3,275</div>
+            <div class="ph-stat-l"><div class="ph-stat-dot" style="background:var(--blue);"></div>Net</div>
+            <div class="ph-stat-v blue">$4,285</div>
           </div>
+        </div>
+
+        <!-- Cash Flow Forecast card -->
+        <div style="background:rgba(0,229,160,0.07);border:1px solid rgba(0,229,160,0.2);border-radius:10px;padding:9px 10px;margin-bottom:9px;">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:7px;">
+            <span style="font-size:7.5px;color:var(--text3);font-weight:700;letter-spacing:.5px;text-transform:uppercase;">Cash Flow Forecast</span>
+            <span style="font-size:7.5px;font-weight:700;color:var(--green);background:rgba(0,229,160,.1);border:1px solid rgba(0,229,160,.2);border-radius:50px;padding:2px 7px;">On Track</span>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;margin-bottom:6px;">
+            <div style="text-align:center;">
+              <div style="font-size:10px;font-weight:700;color:var(--text);letter-spacing:-.3px;">$4,285</div>
+              <div style="font-size:7px;color:var(--text3);margin-top:1px;">Balance Now</div>
+            </div>
+            <div style="text-align:center;">
+              <div style="font-size:10px;font-weight:700;color:var(--text);letter-spacing:-.3px;">$58/day</div>
+              <div style="font-size:7px;color:var(--text3);margin-top:1px;">Daily Avg</div>
+            </div>
+            <div style="text-align:center;">
+              <div style="font-size:10px;font-weight:700;color:var(--green);letter-spacing:-.3px;">$3,420</div>
+              <div style="font-size:7px;color:var(--text3);margin-top:1px;">Projected EOM</div>
+            </div>
+          </div>
+          <div style="font-size:7.5px;color:var(--text3);">Upcoming bills: <span style="color:var(--amber);font-weight:700;">$395</span></div>
         </div>
 
         <!-- AI Insight card -->
@@ -615,49 +638,17 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
             <div class="ph-ai-ico">⊙</div>
             <span class="ph-ai-lbl">AI INSIGHT</span>
           </div>
-          <div class="ph-ai-title">You're $975 away from "Emergency Fund"</div>
-          <div class="ph-ai-body">You can safely add $50 from your available balance while keeping a safe buffer.</div>
-          <div class="ph-ai-btn">Add $50 now</div>
-        </div>
-
-        <!-- Transactions -->
-        <div class="ph-tx">
-          <div class="ph-tx-ico" style="background:rgba(56,182,255,.15);border:1px solid rgba(56,182,255,.25);">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="#38b6ff"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5L21 16z"/></svg>
-          </div>
-          <div style="flex:1;min-width:0;">
-            <div class="ph-tx-nm">United Airlines</div>
-            <div class="ph-tx-dt">Travel · Mar 29</div>
-          </div>
-          <div class="ph-tx-amt red">-$500</div>
-        </div>
-        <div class="ph-tx">
-          <div class="ph-tx-ico" style="background:rgba(0,229,160,.15);border:1px solid rgba(0,229,160,.25);">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#00e5a0" stroke-width="2.5" stroke-linecap="round"><path d="M5 17H3v-4l2-6h14l2 6v4h-2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
-          </div>
-          <div style="flex:1;min-width:0;">
-            <div class="ph-tx-nm">Uber</div>
-            <div class="ph-tx-dt">Transport · Mar 27</div>
-          </div>
-          <div class="ph-tx-amt red">-$6.33</div>
-        </div>
-        <div class="ph-tx">
-          <div class="ph-tx-ico" style="background:rgba(0,229,160,.15);border:1px solid rgba(0,229,160,.25);">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#00e5a0" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
-          </div>
-          <div style="flex:1;min-width:0;">
-            <div class="ph-tx-nm">Payroll</div>
-            <div class="ph-tx-dt">Income · Mar 13</div>
-          </div>
-          <div class="ph-tx-amt green">+$5,850</div>
+          <div class="ph-ai-title">You can move $800–$1,000 to savings</div>
+          <div class="ph-ai-body">Income is strong this month. After a $1,000 buffer, you have clear room to boost your Emergency Fund.</div>
+          <div class="ph-ai-btn">Add $800 to Emergency Fund</div>
         </div>
       </div>
 
-      <!-- Float card -->
+      <!-- Float card — Health Score -->
       <div class="phone-float">
-        <div style="font-size:9px;color:var(--text3);margin-bottom:3px;">Saved this month</div>
-        <div style="font-size:19px;font-weight:700;color:var(--green);letter-spacing:-1px;line-height:1;">+$340</div>
-        <div style="font-size:9px;color:var(--green);margin-top:3px;">↑ 18% vs last month</div>
+        <div style="font-size:9px;color:var(--text3);margin-bottom:3px;">Health Score</div>
+        <div style="font-size:22px;font-weight:700;color:var(--green);letter-spacing:-1px;line-height:1;">78<span style="font-size:12px;font-weight:500;color:var(--text3);">/100</span></div>
+        <div style="font-size:9px;color:var(--green);margin-top:3px;">↑ Good standing</div>
       </div>
     </div>
 
