@@ -1468,6 +1468,15 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
   if (history.scrollRestoration) history.scrollRestoration = 'manual';
   window.scrollTo(0, 0);
 
+  // "View Demo" — smooth scroll to #preview without adding hash to URL
+  document.querySelectorAll('a[href="#preview"]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      e.preventDefault();
+      var target=document.getElementById('preview');
+      if(target) target.scrollIntoView({behavior:'smooth'});
+    });
+  });
+
   // FAQ accordion
   document.querySelectorAll('.faq-q').forEach(function(q){
     q.addEventListener('click',function(){
