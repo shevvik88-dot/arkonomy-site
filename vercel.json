@@ -5,5 +5,13 @@
       "src": "**/*",
       "use": "@vercel/static"
     }
+  ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "arkonomy.com" }],
+      "destination": "https://www.arkonomy.com/:path*",
+      "permanent": true
+    }
   ]
 }

@@ -14,6 +14,79 @@
 })();
 </script>
 <meta name="description" content="Take control of your money without thinking about it. AI-powered financial assistant that tracks spending, analyzes patterns, and delivers real insights.">
+<link rel="canonical" href="https://www.arkonomy.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.arkonomy.com/">
+<meta property="og:title" content="Arkonomy — AI Financial Autopilot">
+<meta property="og:description" content="Take control of your money without thinking about it. AI-powered financial assistant that tracks spending, analyzes patterns, and delivers real insights.">
+<meta property="og:image" content="https://www.arkonomy.com/assets/app-screenshot.png">
+<meta property="og:image:width" content="441">
+<meta property="og:image:height" content="1243">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Arkonomy — AI Financial Autopilot">
+<meta name="twitter:description" content="Take control of your money without thinking about it. AI-powered financial assistant that tracks spending, analyzes patterns, and delivers real insights.">
+<meta name="twitter:image" content="https://www.arkonomy.com/assets/app-screenshot.png">
+
+<!-- Structured data: FAQPage (mirrors the on-page FAQ section verbatim) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is it safe to connect my bank account?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. We use Plaid — the same technology used by Venmo, Coinbase, and thousands of other apps. We get read-only access and never see your login credentials." }
+    },
+    {
+      "@type": "Question",
+      "name": "Which banks are supported?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Over 12,000 US financial institutions including Chase, Bank of America, Wells Fargo, Citi, and most credit unions." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Arkonomy really free?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The core features are completely free. We offer a Pro plan for advanced AI insights, investing features, and unlimited account connections." }
+    },
+    {
+      "@type": "Question",
+      "name": "How is this different from Mint or YNAB?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Arkonomy uses real AI (powered by Claude) to give you specific, actionable insights — not generic tips. It understands your actual patterns and tells you exactly what to change." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work on mobile?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Arkonomy is a Progressive Web App — install it on your iPhone or Android from the browser. No app store needed." }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens to my data?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Your financial data is encrypted, never sold, and used only to generate your personal insights. You can delete your account and all data at any time." }
+    }
+  ]
+}
+</script>
+
+<!-- Structured data: SoftwareApplication (no rating/review — not backed by real data yet) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Arkonomy",
+  "description": "AI-powered financial assistant that tracks spending, analyzes patterns, and delivers real insights.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Web, iOS, Android",
+  "offers": [
+    { "@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "Pro", "price": "9.99", "priceCurrency": "USD" }
+  ]
+}
+</script>
+
 <link rel="icon" type="image/png" href="logo.png">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -576,7 +649,10 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
     <!-- Right: phone mockup -->
     <div class="phone-wrap">
       <div class="phone" style="padding:0;overflow:hidden;">
-        <img src="assets/app-screenshot.png" style="width:100%;border-radius:40px;">
+        <picture>
+          <source srcset="assets/app-screenshot.webp" type="image/webp">
+          <img src="assets/app-screenshot.png" alt="Arkonomy Home screen showing account balance of $2,053.03, a cash flow forecast of $6,843, a Financial Health Score of 100, and a spending-by-category breakdown (Shopping, Food & Dining, Bills, Housing, Transport, Entertainment)." style="width:100%;border-radius:40px;">
+        </picture>
       </div>
 
       <!-- Float card — Health Score -->
