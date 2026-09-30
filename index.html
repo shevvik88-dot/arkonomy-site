@@ -13,14 +13,14 @@
   }
 })();
 </script>
-<meta name="description" content="Take control of your money without thinking about it. AI-powered financial assistant that tracks spending, analyzes patterns, and delivers real insights.">
+<meta name="description" content="Connect your financial accounts, understand spending patterns, and get personalized AI guidance with Arkonomy.">
 <link rel="canonical" href="https://www.arkonomy.com/">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.arkonomy.com/">
 <meta property="og:title" content="Arkonomy — AI Financial Autopilot">
-<meta property="og:description" content="Take control of your money without thinking about it. AI-powered financial assistant that tracks spending, analyzes patterns, and delivers real insights.">
+<meta property="og:description" content="Connect your financial accounts, understand spending patterns, and get personalized AI guidance with Arkonomy.">
 <meta property="og:image" content="https://www.arkonomy.com/assets/app-screenshot.png">
 <meta property="og:image:width" content="441">
 <meta property="og:image:height" content="1243">
@@ -28,7 +28,7 @@
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Arkonomy — AI Financial Autopilot">
-<meta name="twitter:description" content="Take control of your money without thinking about it. AI-powered financial assistant that tracks spending, analyzes patterns, and delivers real insights.">
+<meta name="twitter:description" content="Connect your financial accounts, understand spending patterns, and get personalized AI guidance with Arkonomy.">
 <meta name="twitter:image" content="https://www.arkonomy.com/assets/app-screenshot.png">
 
 <!-- Structured data: FAQPage (mirrors the on-page FAQ section verbatim) -->
@@ -40,32 +40,32 @@
     {
       "@type": "Question",
       "name": "Is it safe to connect my bank account?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. We use Plaid — the same technology used by Venmo, Coinbase, and thousands of other apps. We get read-only access and never see your login credentials." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Arkonomy uses Plaid to connect supported financial institutions. Plaid handles bank authentication, so Arkonomy does not receive your bank username, password, or MFA code." }
     },
     {
       "@type": "Question",
       "name": "Which banks are supported?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Over 12,000 US financial institutions including Chase, Bank of America, Wells Fargo, Citi, and most credit unions." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Arkonomy supports US financial institutions available through Plaid. Availability can vary by institution and account type." }
     },
     {
       "@type": "Question",
       "name": "Is Arkonomy really free?",
-      "acceptedAnswer": { "@type": "Answer", "text": "The core features are completely free. We offer a Pro plan for advanced AI insights, investing features, and unlimited account connections." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Arkonomy has a free plan with one connected bank, transaction tracking, budgeting, Health Score, and limited Insights-tab analysis. Pro adds unlimited bank connections, full Insights-tab analysis, monthly Excel reports, and investment tracking." }
     },
     {
       "@type": "Question",
       "name": "How is this different from Mint or YNAB?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Arkonomy uses real AI (powered by Claude) to give you specific, actionable insights — not generic tips. It understands your actual patterns and tells you exactly what to change." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Arkonomy uses Claude to analyze the financial context available in your account and provide specific observations and possible next steps." }
     },
     {
       "@type": "Question",
       "name": "Does it work on mobile?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Arkonomy is a Progressive Web App — install it on your iPhone or Android from the browser. No app store needed." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Arkonomy works in mobile browsers today and can be installed as a Progressive Web App. A native iOS app is being prepared." }
     },
     {
       "@type": "Question",
       "name": "What happens to my data?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Your financial data is encrypted, never sold, and used only to generate your personal insights. You can delete your account and all data at any time." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Your financial data is protected and is not sold. You can request account deletion from Settings." }
     }
   ]
 }
@@ -77,9 +77,9 @@
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "Arkonomy",
-  "description": "AI-powered financial assistant that tracks spending, analyzes patterns, and delivers real insights.",
+  "description": "AI-powered financial assistant for connected accounts, spending analysis, budgeting, and personalized guidance.",
   "applicationCategory": "FinanceApplication",
-  "operatingSystem": "Web, iOS, Android",
+  "operatingSystem": "Web",
   "offers": [
     { "@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD" },
     { "@type": "Offer", "name": "Pro", "price": "9.99", "priceCurrency": "USD" }
@@ -99,7 +99,7 @@
   --green:#00e5a0; --blue:#38b6ff; --purple:#7c6bff;
   --red:#ff6b6b; --amber:#fbbf24; --orange:#ff6332; --teal:#00c9a7;
 }
-html{scroll-behavior:smooth;}
+html{scroll-behavior:smooth;overflow-x:hidden;}
 body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:15px;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
 a{text-decoration:none;color:inherit;}
 
@@ -478,13 +478,6 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
 .social-bar{padding:22px 7%;background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
 .social-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;}
 .social-text{font-size:14px;color:var(--text2);font-weight:300;max-width:280px;}
-.avatars-group{display:flex;align-items:center;gap:12px;}
-.avatars{display:flex;}
-.av{width:36px;height:36px;border-radius:50%;border:2.5px solid var(--bg2);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#fff;margin-left:-10px;flex-shrink:0;}
-.av:first-child{margin-left:0;}
-.stars-wrap{display:flex;align-items:center;gap:6px;}
-.stars{color:#fbbf24;font-size:14px;letter-spacing:1px;}
-.rating-text{font-size:12px;color:var(--text2);}
 .stat-pills{display:flex;gap:8px;flex-wrap:wrap;}
 .stat-pill{font-size:11px;font-weight:600;color:var(--text2);background:var(--surface);border:1px solid var(--border2);border-radius:50px;padding:5px 12px;white-space:nowrap;}
 
@@ -569,7 +562,7 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
   .hero-grid,.ai-layout,.savings-grid,.insights-grid,.steps-row{grid-template-columns:1fr;}
   .steps-row::before{display:none;}
   .cta-card{padding:50px 24px;}
-  nav ul{display:none;}
+  .nav-links{display:none;}
   nav{height:56px;padding:0 5%;}
   .nav-logo{font-size:15px;}
   .btn-pill{padding:7px 16px;font-size:13px;}
@@ -596,10 +589,10 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
   .sticky-sub{display:none;}
   .sticky-name{font-size:13px;}
   body{padding-bottom:80px;}
+}
 @media(max-width:480px){
   .sticky-bar{display:none!important;}
   body{padding-bottom:0;}
-}
 }
 </style>
 </head>
@@ -629,14 +622,14 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
     <div>
       <img src="logo.png" alt="Arkonomy" style="width:160px;height:160px;object-fit:contain;display:block;margin-bottom:28px;">
       <div class="badge"><div class="badge-dot"></div>AI Financial Autopilot</div>
-      <h1>Take control of your money <span class="grad">without thinking about it</span></h1>
-      <p class="hero-sub">Arkonomy tracks your spending, analyzes patterns, and delivers real AI insights — not generic tips. Built for your actual financial life.</p>
+      <h1>See what your money is doing <span class="grad">and what to review next</span></h1>
+      <p class="hero-sub">Arkonomy brings connected accounts, spending patterns, budgets, and AI-guided financial coaching into one clear workspace.</p>
       <div class="hero-actions">
         <a href="https://app.arkonomy.com" class="btn-primary">Open Web App →</a>
         <a href="#preview" class="btn-ghost">View Demo</a>
       </div>
       <div class="hero-trust">
-        <span>Bank-level security via Plaid</span>
+        <span>Read-only connections via Plaid</span>
         <div class="tdot"></div>
         <span>Powered by Claude AI</span>
         <div class="tdot"></div>
@@ -651,7 +644,7 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
       <div class="phone" style="padding:0;overflow:hidden;">
         <picture>
           <source srcset="assets/app-screenshot.webp" type="image/webp">
-          <img src="assets/app-screenshot.png" alt="Arkonomy Home screen showing account balance of $2,053.03, a cash flow forecast of $6,843, a Financial Health Score of 100, and a spending-by-category breakdown (Shopping, Food & Dining, Bills, Housing, Transport, Entertainment)." style="width:100%;border-radius:40px;">
+          <img src="assets/app-screenshot.png" alt="Arkonomy dashboard showing connected accounts, spending, financial health, and market information." style="width:100%;border-radius:40px;">
         </picture>
       </div>
 
@@ -669,23 +662,11 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
 <!-- ═══════════════════════════════ SOCIAL PROOF -->
 <div class="social-bar">
   <div class="social-inner">
-    <div class="social-text">Trusted by early users who take their finances seriously</div>
-    <div class="avatars-group">
-      <div class="avatars">
-        <div class="av" style="background:#7c6bff;">JM</div>
-        <div class="av" style="background:#00c9a7;">SR</div>
-        <div class="av" style="background:#38b6ff;">AK</div>
-        <div class="av" style="background:#ff6b6b;">DL</div>
-        <div class="av" style="background:#fbbf24;color:#0d1117;">TP</div>
-      </div>
-      <div class="stars-wrap">
-        <span class="stars">★★★★★</span>
-        <span class="rating-text">4.9 from beta users</span>
-      </div>
-    </div>
+    <div class="social-text">Built around your connected financial data</div>
     <div class="stat-pills">
-      <div class="stat-pill">AI insights daily</div>
-      <div class="stat-pill">Bank-level security</div>
+      <div class="stat-pill">AI-guided financial coaching</div>
+      <div class="stat-pill">Read-only bank connections</div>
+      <div class="stat-pill">EN · RU · ES · PT</div>
     </div>
   </div>
 </div>
@@ -702,13 +683,13 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00e5a0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
         </div>
         <h3>Real Bank Connection</h3>
-        <p>Connect via Plaid in under 2 minutes. Works with 12,000+ US banks. Every transaction categorized and tracked automatically — no manual entry ever.</p>
+        <p>Connect supported US financial institutions through Plaid. Transactions sync into one place, with manual entry available when needed.</p>
       </div>
 
       <div class="feat-card" style="border-color:rgba(124,107,255,.22);">
         <div class="feat-ico" style="background:rgba(124,107,255,.1);border:1px solid rgba(124,107,255,.2);color:var(--purple);font-size:20px;font-weight:700;">⊙</div>
         <h3>AI Assistant with Web Search</h3>
-        <p>Ask anything about your finances. Powered by Claude AI — analyzes your real data and can search the web for context. Specific answers, never generic tips.</p>
+        <p>Ask questions about your finances. Powered by Claude, the coach uses the financial context available in Arkonomy and can search the web when that feature is available.</p>
       </div>
 
       <div class="feat-card" style="border-color:rgba(56,182,255,.18);">
@@ -716,7 +697,7 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#38b6ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
         </div>
         <h3>Health Score & Analytics</h3>
-        <p>Your Financial Health Score at a glance. Spending by category with a donut chart, cash flow forecast, and monthly comparisons — all updated in real time.</p>
+        <p>Your Financial Health Score at a glance. Review spending by category, cash flow projections, and monthly comparisons whenever connected account data refreshes.</p>
       </div>
 
       <div class="feat-card" style="border-color:rgba(251,191,36,.18);">
@@ -724,7 +705,7 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
         </div>
         <h3>Savings Goals & Investing</h3>
-        <p>Set savings goals and track progress visually. Round up spare change automatically and put it toward your investments.</p>
+        <p>Set savings goals, track spare change from purchases, and choose when to invest through your connected brokerage account.</p>
       </div>
 
     </div>
@@ -734,8 +715,8 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
 <!-- ═══════════════════════════════ SECURITY & TRUST -->
 <section id="security">
   <div class="inner">
-    <div class="eyebrow green">Bank-level security</div>
-    <h2 class="sec-title">Your data is safe. Always.</h2>
+    <div class="eyebrow green">Security and privacy</div>
+    <h2 class="sec-title">Security designed into every connection</h2>
     <div class="sec-grid">
 
       <div class="sec-card" style="border-color:rgba(0,229,160,.18);">
@@ -743,15 +724,15 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00e5a0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
         <h3>Read-only access</h3>
-        <p>We never store your credentials. Plaid connects directly to your bank using the same technology trusted by Venmo and Coinbase.</p>
+        <p>Plaid handles bank authentication. Arkonomy does not receive your bank username, password, or MFA code.</p>
       </div>
 
       <div class="sec-card" style="border-color:rgba(56,182,255,.18);">
         <div class="sec-ico" style="background:rgba(56,182,255,.1);border:1px solid rgba(56,182,255,.2);">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#38b6ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
         </div>
-        <h3>256-bit encryption</h3>
-        <p>All data encrypted in transit and at rest using AES-256. The same encryption standard used by the world's major banks.</p>
+        <h3>Protected connections</h3>
+        <p>Connections use HTTPS/TLS, and integration secrets stay in server-side functions instead of client code.</p>
       </div>
 
       <div class="sec-card" style="border-color:rgba(124,107,255,.18);">
@@ -766,7 +747,7 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
     <div class="trust-bar">
       <div class="trust-item">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00e5a0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        <span>Secured by Plaid</span>
+        <span>Connections via Plaid</span>
       </div>
       <div class="trust-sep" style="width:1px;height:20px;background:var(--border);"></div>
       <div class="trust-item">
@@ -794,11 +775,11 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
       </div>
       <div class="ba-row">
         <div class="ba-l"><span style="opacity:.5;flex-shrink:0;">✗</span> No idea where money went</div>
-        <div class="ba-r"><span style="flex-shrink:0;">✓</span> Every dollar tracked automatically</div>
+        <div class="ba-r"><span style="flex-shrink:0;">✓</span> Connected transactions in one place</div>
       </div>
       <div class="ba-row">
         <div class="ba-l"><span style="opacity:.5;flex-shrink:0;">✗</span> Manual spreadsheets</div>
-        <div class="ba-r"><span style="flex-shrink:0;">✓</span> AI does it for you</div>
+        <div class="ba-r"><span style="flex-shrink:0;">✓</span> AI highlights patterns and next steps</div>
       </div>
       <div class="ba-row">
         <div class="ba-l"><span style="opacity:.5;flex-shrink:0;">✗</span> Generic budget templates</div>
@@ -806,11 +787,11 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
       </div>
       <div class="ba-row">
         <div class="ba-l"><span style="opacity:.5;flex-shrink:0;">✗</span> Realize overspending too late</div>
-        <div class="ba-r"><span style="flex-shrink:0;">✓</span> Alerts before it's a problem</div>
+        <div class="ba-r"><span style="flex-shrink:0;">✓</span> Warnings when current data shows a risk</div>
       </div>
       <div class="ba-row">
         <div class="ba-l"><span style="opacity:.5;flex-shrink:0;">✗</span> Saving feels impossible</div>
-        <div class="ba-r"><span style="flex-shrink:0;">✓</span> Round-ups build savings quietly</div>
+        <div class="ba-r"><span style="flex-shrink:0;">✓</span> Track goals and review spare change</div>
       </div>
     </div>
   </div>
@@ -830,10 +811,10 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
         <div class="price-desc">Perfect to start</div>
         <div class="price-divider"></div>
         <ul class="pf-list">
-          <li><span class="chk">✓</span> Connect 1 bank account</li>
-          <li><span class="chk">✓</span> Transaction tracking</li>
-          <li><span class="chk">✓</span> Basic AI insights</li>
-          <li><span class="chk">✓</span> Monthly summary</li>
+          <li><span class="chk">✓</span> Connect 1 bank</li>
+          <li><span class="chk">✓</span> Transaction tracking &amp; manual entries</li>
+          <li><span class="chk">✓</span> Budgeting &amp; Financial Health Score</li>
+          <li><span class="chk">✓</span> Limited Insights-tab analysis</li>
         </ul>
         <a href="https://app.arkonomy.com" class="btn-outline-price">Get Started Free</a>
       </div>
@@ -846,18 +827,17 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
         <div class="price-desc">For serious financial growth</div>
         <div class="price-divider"></div>
         <ul class="pf-list">
-          <li><span class="chk">✓</span> Unlimited accounts</li>
-          <li><span class="chk">✓</span> Full AI insights &amp; analysis</li>
-          <li><span class="chk">✓</span> Savings goals &amp; round-ups</li>
-          <li><span class="chk">✓</span> Investing integration</li>
-          <li><span class="chk">✓</span> Spending breakdown &amp; charts</li>
-          <li><span class="chk">✓</span> Priority support</li>
+          <li><span class="chk">✓</span> Unlimited bank connections</li>
+          <li><span class="chk">✓</span> Full Insights-tab analysis</li>
+          <li><span class="chk">✓</span> Monthly Excel reports</li>
+          <li><span class="chk">✓</span> Investment tracking</li>
+          <li><span class="chk">✓</span> Savings goals &amp; spare-change tracking</li>
         </ul>
         <a href="https://app.arkonomy.com" class="btn-green-price">Start Free Trial</a>
       </div>
 
     </div>
-    <div class="price-note">No credit card required · Cancel anytime</div>
+    <div class="price-note">7-day trial · Cancel anytime</div>
   </div>
 </section>
 
@@ -873,7 +853,7 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
           <span class="faq-q-text">Is it safe to connect my bank account?</span>
           <span class="faq-icon">+</span>
         </div>
-        <div class="faq-a">Yes. We use Plaid — the same technology used by Venmo, Coinbase, and thousands of other apps. We get read-only access and never see your login credentials.</div>
+        <div class="faq-a">Arkonomy uses Plaid to connect supported financial institutions. Plaid handles bank authentication, so Arkonomy does not receive your bank username, password, or MFA code.</div>
       </div>
 
       <div class="faq-item">
@@ -881,7 +861,7 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
           <span class="faq-q-text">Which banks are supported?</span>
           <span class="faq-icon">+</span>
         </div>
-        <div class="faq-a">Over 12,000 US financial institutions including Chase, Bank of America, Wells Fargo, Citi, and most credit unions.</div>
+        <div class="faq-a">Arkonomy supports US financial institutions available through Plaid. Availability can vary by institution and account type.</div>
       </div>
 
       <div class="faq-item">
@@ -889,7 +869,7 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
           <span class="faq-q-text">Is Arkonomy really free?</span>
           <span class="faq-icon">+</span>
         </div>
-        <div class="faq-a">The core features are completely free. We offer a Pro plan for advanced AI insights, investing features, and unlimited account connections.</div>
+        <div class="faq-a">Arkonomy has a free plan with one connected bank, transaction tracking, budgeting, Health Score, and limited Insights-tab analysis. Pro adds unlimited bank connections, full Insights-tab analysis, monthly Excel reports, and investment tracking.</div>
       </div>
 
       <div class="faq-item">
@@ -897,7 +877,7 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
           <span class="faq-q-text">How is this different from Mint or YNAB?</span>
           <span class="faq-icon">+</span>
         </div>
-        <div class="faq-a">Arkonomy uses real AI (powered by Claude) to give you specific, actionable insights — not generic tips. It understands your actual patterns and tells you exactly what to change.</div>
+        <div class="faq-a">Arkonomy uses Claude to analyze the financial context available in your account and provide specific observations and possible next steps.</div>
       </div>
 
       <div class="faq-item">
@@ -905,7 +885,7 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
           <span class="faq-q-text">Does it work on mobile?</span>
           <span class="faq-icon">+</span>
         </div>
-        <div class="faq-a">Yes. Arkonomy is a Progressive Web App — install it on your iPhone or Android from the browser. No app store needed.</div>
+        <div class="faq-a">Arkonomy works in mobile browsers today and can be installed as a Progressive Web App. A native iOS app is being prepared.</div>
       </div>
 
       <div class="faq-item">
@@ -913,7 +893,7 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
           <span class="faq-q-text">What happens to my data?</span>
           <span class="faq-icon">+</span>
         </div>
-        <div class="faq-a">Your financial data is encrypted, never sold, and used only to generate your personal insights. You can delete your account and all data at any time.</div>
+        <div class="faq-a">Your financial data is protected and is not sold. You can request account deletion from Settings.</div>
       </div>
 
     </div>
@@ -1055,17 +1035,17 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
       <div class="step-item">
         <div class="step-n">01</div>
         <h3>Connect accounts</h3>
-        <p>Bank, credit cards, savings — all in one place. Secure, read-only access via Plaid. Takes under 2 minutes.</p>
+        <p>Bring supported bank, credit-card, and savings accounts into one place through a read-only Plaid connection.</p>
       </div>
       <div class="step-item">
         <div class="step-n">02</div>
-        <h3>Track automatically</h3>
-        <p>Every transaction categorized and logged. No setup, no manual work. Arkonomy handles everything in real time.</p>
+        <h3>Review synced activity</h3>
+        <p>Connected transactions sync from your bank, and you can add or correct entries manually when needed.</p>
       </div>
       <div class="step-item">
         <div class="step-n">03</div>
         <h3>Get AI insights</h3>
-        <p>Arkonomy analyzes your patterns and tells you exactly what to do next — specific numbers, specific actions.</p>
+        <p>Arkonomy analyzes available patterns and suggests concrete next steps you can review and decide on.</p>
       </div>
     </div>
   </div>
@@ -1092,7 +1072,7 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
             You overspent <strong class="red">$320 this month</strong>.<br>
             Transport hit <strong class="amber">$590</strong> — that's $190 above your usual.<br>
             Most of it: rideshare on Friday and Saturday nights.<br><br>
-            Switch to public transit twice a week → save <strong class="green">$120/month</strong>. That's <strong class="green">$1,440/year</strong>.
+            Replacing two rideshare trips each week could save an estimated <strong class="green">$120/month</strong>, based on this spending pattern.
             <div><span class="ai-cta-inline">→ Create a transport budget</span></div>
           </div>
         </div>
@@ -1103,7 +1083,7 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
           <div class="af-ico" style="background:rgba(0,229,160,.1);border:1px solid rgba(0,229,160,.2);">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00e5a0" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
           </div>
-          <div><h4>Anomaly detection</h4><p>Catches unusual spending before it becomes a pattern. Flags forgotten subscriptions automatically.</p></div>
+          <div><h4>Pattern detection</h4><p>Highlights unusual spending and recurring charges that may deserve your attention.</p></div>
         </div>
         <div class="af-row">
           <div class="af-ico" style="background:rgba(56,182,255,.1);border:1px solid rgba(56,182,255,.2);">
@@ -1115,13 +1095,13 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
           <div class="af-ico" style="background:rgba(124,107,255,.1);border:1px solid rgba(124,107,255,.2);">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c6bff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
           </div>
-          <div><h4>Actionable advice</h4><p>Never "spend less on coffee". Always a specific number, a specific category, a specific action.</p></div>
+          <div><h4>Actionable guidance</h4><p>Get specific categories, amounts, and next steps based on the financial data available to Arkonomy.</p></div>
         </div>
         <div class="af-row">
           <div class="af-ico" style="background:rgba(251,191,36,.1);border:1px solid rgba(251,191,36,.2);">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
           </div>
-          <div><h4>Real-time updates</h4><p>Every time you spend, Arkonomy recalculates your position and refreshes your insights instantly.</p></div>
+          <div><h4>Data-aware updates</h4><p>When connected account data refreshes, Arkonomy recalculates your position and updates relevant insights.</p></div>
         </div>
       </div>
 
@@ -1134,7 +1114,7 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
   <div class="inner">
     <div class="eyebrow blue">Spending Breakdown</div>
     <h2 class="sec-title">See exactly where<br>your money goes</h2>
-    <p class="sec-sub">Arkonomy auto-categorizes every transaction so you always know your actual spending split — not a guess.</p>
+    <p class="sec-sub">Arkonomy categorizes connected transactions and lets you review the result, so your spending breakdown stays understandable.</p>
 
     <div class="spending-grid">
       <!-- Donut chart -->
@@ -1171,7 +1151,7 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
         <div style="background:var(--surface);border:1px solid var(--border);border-radius:16px;overflow:hidden;margin-bottom:14px;">
           <div style="padding:16px 20px;border-bottom:1px solid var(--border);">
             <div style="font-size:13px;font-weight:700;color:var(--text);">Spending by Category</div>
-            <div style="font-size:11px;color:var(--text3);margin-top:2px;">April 2026</div>
+            <div style="font-size:11px;color:var(--text3);margin-top:2px;">Current month</div>
           </div>
           <div class="cat-list">
             <div class="cat-row">
@@ -1215,7 +1195,7 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
         <!-- Monthly Budget bar -->
         <div class="budget-card">
           <div class="budget-top">
-            <div class="budget-title">Monthly Budget · April 2026</div>
+            <div class="budget-title">Monthly Budget · Current month</div>
             <div class="budget-ok">On Track</div>
           </div>
           <div class="budget-meta dim">Spent <strong style="color:#00e5a0;">$2,450</strong> of <strong style="color:var(--text);">$3,000</strong></div>
@@ -1237,7 +1217,7 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
   <div class="inner">
     <div class="eyebrow green">Save small, build big</div>
     <h2 class="sec-title">Your money grows<br>while you live your life</h2>
-    <p class="sec-sub" style="margin-bottom:40px;">Round-ups and savings goals — the small amounts you never notice, automatically moving toward the things that matter.</p>
+    <p class="sec-sub" style="margin-bottom:40px;">Track savings goals and spare change from purchases, then decide when to invest through your connected brokerage account.</p>
 
     <div class="savings-grid">
 
@@ -1257,7 +1237,7 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
         </div>
         <div class="goal-bar-wrap" style="height:6px;margin-bottom:12px;"><div class="goal-bar-fill" style="width:79%;"></div></div>
         <div class="goal-stat"><span>Progress</span><span>79%</span></div>
-        <div class="goal-stat"><span>On track for</span><span>Aug 2025</span></div>
+        <div class="goal-stat"><span>On track</span><span>Based on your pace</span></div>
         <div class="goal-stat" style="margin-bottom:14px;"><span>Monthly contribution</span><span class="green">+$200</span></div>
         <div class="quick-adds">
           <div class="qa-btn">+$10</div>
@@ -1328,7 +1308,7 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
   <div class="inner">
     <div class="eyebrow purple">Financial Insights</div>
     <h2 class="sec-title">Your complete financial picture</h2>
-    <p class="sec-sub" style="margin-bottom:40px;">Arkonomy scores your financial health and tells you exactly what to do to improve it.</p>
+    <p class="sec-sub" style="margin-bottom:40px;">Arkonomy summarizes your financial health and suggests practical areas to review.</p>
 
     <div class="insights-grid">
 
@@ -1374,7 +1354,7 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
             </div>
             <div>
               <div class="ic-title">Weekly Summary</div>
-              <div class="ic-sub">Apr 1 – Apr 7, 2025</div>
+              <div class="ic-sub">This week</div>
             </div>
           </div>
           <div class="ic-body">You spent <strong style="color:var(--text);">$847</strong> this week — <strong class="red">$120 over</strong> your weekly average. Transport and food were the main drivers.</div>
@@ -1390,8 +1370,8 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
               <div class="ic-sub purple">AI Recommendation</div>
             </div>
           </div>
-          <div class="ic-body">Increase your Emergency Fund contribution by <strong class="green">$50/month</strong> — you'll reach your goal 3 months earlier and earn <strong class="green">$38 more in interest</strong>.</div>
-          <a href="https://app.arkonomy.com" class="btn-grad-full" style="margin-top:12px;">→ Enable Autopilot</a>
+          <div class="ic-body">If your current pace remains stable, adding <strong class="green">$50/month</strong> could help you reach your Emergency Fund goal sooner.</div>
+          <a href="https://app.arkonomy.com" class="btn-grad-full" style="margin-top:12px;">→ Review in Arkonomy</a>
         </div>
 
         <div class="ic-card">
@@ -1421,7 +1401,7 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
         <img src="logo.png" alt="Arkonomy" style="width:88px;height:88px;object-fit:contain;">
       </div>
       <h2 style="font-size:clamp(26px,3.5vw,48px);font-weight:700;letter-spacing:-2px;margin-bottom:14px;position:relative;line-height:1.1;">Start building better<br>financial habits today</h2>
-      <p style="font-size:16px;color:var(--text2);font-weight:300;max-width:460px;margin:0 auto;position:relative;line-height:1.65;">No credit card. No setup fee. Just your finances, finally under control.</p>
+      <p style="font-size:16px;color:var(--text2);font-weight:300;max-width:460px;margin:0 auto;position:relative;line-height:1.65;">Start with the free plan and upgrade when you need more connected accounts and analysis.</p>
       <div class="cta-actions">
         <a href="https://app.arkonomy.com" class="btn-primary">Open Web App →</a>
         <a href="#preview" class="btn-ghost">View Demo</a>
