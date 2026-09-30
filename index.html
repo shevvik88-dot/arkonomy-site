@@ -525,7 +525,8 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
 .faq-list{max-width:760px;margin:52px auto 0;}
 .faq-item{border-bottom:1px solid var(--border);}
 .faq-item:first-child{border-top:1px solid var(--border);}
-.faq-q{display:flex;align-items:center;justify-content:space-between;padding:18px 0;cursor:pointer;user-select:none;gap:16px;}
+.faq-q{display:flex;align-items:center;justify-content:space-between;width:100%;padding:18px 0;cursor:pointer;user-select:none;gap:16px;background:none;border:0;text-align:left;font:inherit;color:inherit;}
+.faq-q:focus-visible{outline:2px solid var(--green);outline-offset:4px;border-radius:4px;}
 .faq-q-text{font-size:15px;font-weight:600;color:var(--text);transition:color .2s;}
 .faq-icon{width:22px;height:22px;border-radius:50%;background:var(--surface2);border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--text2);flex-shrink:0;transition:transform .25s,background .2s,border-color .2s,color .2s;line-height:1;}
 .faq-item.open .faq-icon{transform:rotate(45deg);background:rgba(124,107,255,.15);border-color:rgba(124,107,255,.3);color:var(--purple);}
@@ -849,51 +850,51 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
     <div class="faq-list">
 
       <div class="faq-item">
-        <div class="faq-q">
+        <button class="faq-q" type="button" id="faq-q-1" aria-expanded="false" aria-controls="faq-a-1">
           <span class="faq-q-text">Is it safe to connect my bank account?</span>
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-a">Arkonomy uses Plaid to connect supported financial institutions. Plaid handles bank authentication, so Arkonomy does not receive your bank username, password, or MFA code.</div>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="faq-a-1" role="region" aria-labelledby="faq-q-1">Arkonomy uses Plaid to connect supported financial institutions. Plaid handles bank authentication, so Arkonomy does not receive your bank username, password, or MFA code.</div>
       </div>
 
       <div class="faq-item">
-        <div class="faq-q">
+        <button class="faq-q" type="button" id="faq-q-2" aria-expanded="false" aria-controls="faq-a-2">
           <span class="faq-q-text">Which banks are supported?</span>
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-a">Arkonomy supports US financial institutions available through Plaid. Availability can vary by institution and account type.</div>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="faq-a-2" role="region" aria-labelledby="faq-q-2">Arkonomy supports US financial institutions available through Plaid. Availability can vary by institution and account type.</div>
       </div>
 
       <div class="faq-item">
-        <div class="faq-q">
+        <button class="faq-q" type="button" id="faq-q-3" aria-expanded="false" aria-controls="faq-a-3">
           <span class="faq-q-text">Is Arkonomy really free?</span>
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-a">Arkonomy has a free plan with one connected bank, transaction tracking, budgeting, Health Score, and limited Insights-tab analysis. Pro adds unlimited bank connections, full Insights-tab analysis, monthly Excel reports, and investment tracking.</div>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="faq-a-3" role="region" aria-labelledby="faq-q-3">Arkonomy has a free plan with one connected bank, transaction tracking, budgeting, Health Score, and limited Insights-tab analysis. Pro adds unlimited bank connections, full Insights-tab analysis, monthly Excel reports, and investment tracking.</div>
       </div>
 
       <div class="faq-item">
-        <div class="faq-q">
+        <button class="faq-q" type="button" id="faq-q-4" aria-expanded="false" aria-controls="faq-a-4">
           <span class="faq-q-text">How is this different from Mint or YNAB?</span>
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-a">Arkonomy uses Claude to analyze the financial context available in your account and provide specific observations and possible next steps.</div>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="faq-a-4" role="region" aria-labelledby="faq-q-4">Arkonomy uses Claude to analyze the financial context available in your account and provide specific observations and possible next steps.</div>
       </div>
 
       <div class="faq-item">
-        <div class="faq-q">
+        <button class="faq-q" type="button" id="faq-q-5" aria-expanded="false" aria-controls="faq-a-5">
           <span class="faq-q-text">Does it work on mobile?</span>
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-a">Arkonomy works in mobile browsers today and can be installed as a Progressive Web App. A native iOS app is being prepared.</div>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="faq-a-5" role="region" aria-labelledby="faq-q-5">Arkonomy works in mobile browsers today and can be installed as a Progressive Web App. A native iOS app is being prepared.</div>
       </div>
 
       <div class="faq-item">
-        <div class="faq-q">
+        <button class="faq-q" type="button" id="faq-q-6" aria-expanded="false" aria-controls="faq-a-6">
           <span class="faq-q-text">What happens to my data?</span>
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-a">Your financial data is protected and is not sold. You can request account deletion from Settings.</div>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="faq-a-6" role="region" aria-labelledby="faq-q-6">Your financial data is protected and is not sold. You can request account deletion from Settings.</div>
       </div>
 
     </div>
@@ -1463,8 +1464,14 @@ footer{padding:40px 7%;border-top:1px solid var(--border);background:var(--bg2);
     q.addEventListener('click',function(){
       var item=this.closest('.faq-item');
       var isOpen=item.classList.contains('open');
-      document.querySelectorAll('.faq-item.open').forEach(function(o){o.classList.remove('open');});
-      if(!isOpen) item.classList.add('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(o){
+        o.classList.remove('open');
+        o.querySelector('.faq-q').setAttribute('aria-expanded','false');
+      });
+      if(!isOpen){
+        item.classList.add('open');
+        this.setAttribute('aria-expanded','true');
+      }
     });
   });
 
